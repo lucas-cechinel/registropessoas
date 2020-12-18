@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-	require "../../app_login/protecao.php";
+	require "../app_login/protecao.php";
 ?>
 
 <html class="bg-light">

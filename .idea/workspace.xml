@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc8e3b57-77b6-44ec-85f7-9356807669a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app_login/all_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login/all_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login/conexao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login/conexao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login/controle-cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login/controle-cadastro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login/controle-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login/controle-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login_pub/admin_inicio.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login_pub/admin_inicio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login_pub/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login_pub/cadastro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login_pub/controle-cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login_pub/controle-cadastro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login_pub/controle-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login_pub/controle-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login_pub/lista_usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login_pub/lista_usuarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_login_pub/logoff.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_login_pub/logoff.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>

@@ -1,9 +1,10 @@
 
 <?php
 
-	require "../../app_login/conexao.php";
+
+	require_once 'conexao.php';
 	
-	require "../../app_login/protecao.php";
+	require "protecao.php";
 
 	$users_stmt = "select * from tb_usuarios";
 	$stmt_u = $conexao->prepare($users_stmt);

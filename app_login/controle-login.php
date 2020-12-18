@@ -1,12 +1,8 @@
 <?php
 	session_start();
 
-	require '../../app_login/conexao.php';
-	/* teste
-	echo "<pre>";
-		print_r($_POST);
-	echo "<pre>";
-	*/
+    require_once 'conexao.php';
+
 	$pulled_email = $_POST['email'];
 	$pulled_passwrd = $_POST['senha'];
 
@@ -32,12 +28,3 @@
 		$_SESSION['autenticado'] = false;
 		header("Location: login_error.html?error=wrong_information");
 	}
-
-
-	/* #teste
-	echo "<pre>";
-		print_r($info_valida);
-	echo "<pre>";
-	*/
-
-	

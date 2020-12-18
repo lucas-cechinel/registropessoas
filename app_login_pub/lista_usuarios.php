@@ -2,7 +2,7 @@
 
 	<?php
 
-		 require "../../app_login/all_users.php";
+		 require "../app_login/all_users.php";
 
 	?>
 

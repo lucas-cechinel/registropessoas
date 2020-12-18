@@ -1,6 +1,6 @@
 <?php
 	
-	require_once "../../app_login/conexao.php";
+	require_once "conexao.php";
 	require_once "protecao.php";
 	//teste
 	/*
