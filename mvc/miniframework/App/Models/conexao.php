@@ -1,14 +1,30 @@
 <?php
 
-    $DB_TYPE = 'mysql';
-    $DB_HOST = 'localhost';
-    $DB_PORT = '3306';
-    $DB_NAME = 'app_login';
-    $DB_USER = 'root';
-    $DB_PASSWORD = '';
+class Conexao{
 
-    try{
-        $conexao = new PDO("{$DB_TYPE}:host={$DB_HOST};port={$DB_PORT};dbname={$DB_NAME}", $DB_USER, $DB_PASSWORD);
-    } catch(PDOException $e) {
-        echo 'ERROR: ' . $e->getMessage();
+    private $DB_TYPE = 'mysql';
+    private $DB_HOST = 'localhost';
+    private $DB_PORT = '3306';
+    private $DB_NAME = 'app_login';
+    private $DB_USER = 'root';
+    private $DB_PASSWORD = '';
+    
+   public function conectar()
+    {
+        try{
+        $conexao = new PDO(
+            "$this->DB_TYPE:host=$this->DB_HOST;port=$this->DB_PORT;dbname=$this->DB_NAME",
+            "$this->DB_USER",
+            "$this->DB_PASSWORD"
+        );
+
+        return $conexao;
+
+        } catch(PDOException $e) {
+            $e->getMessage();     
+        }
     }
+}
+
+
+    

@@ -2,12 +2,33 @@
 require_once 'conexao.php';
 require "protecao.php";
 
-	if($_SESSION['autenticado']) {
-		$id = $_POST['user_id'];
+$conexao = new Conexao;
+$id = $_POST['user_id'];
 
-		$query = "delete from tb_usuarios where id = $id";
-		$conexao->exec($query);
-		header("Location: /deleteuser");		
-	} else {
-			header("Location: /loginerror");
+class Remocao 
+{
+	private $conexao;
+	private $iduser;
+	
+	function __construct(Conexao $conexao, $iduser)
+	{
+		$this->conexao = $conexao->conectar();
+		$this->iduser = $iduser; 
+	}
+
+	function deletar()
+	{
+
+		if($_SESSION['autenticado']) {
+			$query = "delete from tb_usuarios where id = $this->iduser";
+			$this->conexao->exec($query);
+			header("Location: /deleteuser");		
+		} else {
+				header("Location: /loginerror");
 		}
+
+	}
+}
+
+$remocao = new Remocao($conexao, $id);
+$remocao->deletar();
