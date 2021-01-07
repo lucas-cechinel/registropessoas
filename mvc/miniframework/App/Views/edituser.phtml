@@ -1,5 +1,4 @@
 <?php require_once '../App/Models/listausuarios.php';require_once 'src/header.php' ?>
-<script type="text/javascript" src="src/js/listausuarios.js"></script>
 <div class="container mt-5 pt-5" >
     <a href="/admininicio" class="btn btn-outline-secondary">Voltar</a>
     <table class="table">
@@ -22,7 +21,7 @@
                         <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
                         <input type="hidden" name="nome" value="<?= $usuario['nome'] ?>">
                         <input type="hidden" name="email" value="<?= $usuario['email'] ?>">                        
-                        <button class="far fa-edit fa-lg btn text-warning" type="submit" onclick="editar(<?= $usuario['id'] ?>, '<?= $usuario['nome'] ?>', '<?= $usuario['email'] ?>')"></button>
+                        <button class="far fa-edit fa-lg btn text-warning" type="submit"></button>
 
                     </form>
                 </td>
