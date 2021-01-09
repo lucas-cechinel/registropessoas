@@ -1,8 +1,6 @@
 <?php
-	session_start();
 
-	require_once "conexao.php";
-	$conexao = new Conexao();
+    session_start();
 
     class ValidaLogin
     {
@@ -19,9 +17,7 @@
     	}
     	function logar()
     	{
-    		echo $pulled_email;
-
-			$info_stmt = "select * from tb_admin";
+			$info_stmt = "SELECT * FROM tb_admin";
 			$stmt_i = $this->conexao->query($info_stmt);
 			$info_valida = $stmt_i->fetchAll(PDO::FETCH_ASSOC);
 			foreach ($info_valida as $key => $value) {
@@ -31,28 +27,21 @@
 					$usuario_autenticado = true;
 				}
 			}
-			if ($usuario_autenticado) {
+			if ($usuario_autenticado == true) {
 				$_SESSION['autenticado'] = true;
 				header("Location: /admininicio");
 				} else {
 			 		$_SESSION['autenticado'] = false;
 					header("Location: /loginerror");
 				}
-		    		
-    	}
-    	  // function info()
-    	  //  {
-    	  //  	var_dump($this->pulled_email);
-    	  //  }
-    }
+    	    }
+        }
 
-	$email = $_POST['email']; 
+	$email = $_POST['email'];
 	$password = $_POST['senha'];
+
+    require_once "conexao.php";
+    $conexao = new Conexao();
 
 	$validalogin = new ValidaLogin($conexao, $email, $password);
 	$validalogin->logar();
-
-	
-	
-
-	// $validalogin->info();

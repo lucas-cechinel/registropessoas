@@ -20,7 +20,7 @@ class Remocao
 	{
 
 		if($_SESSION['autenticado']) {
-			$query = "delete from tb_usuarios where id = $this->iduser";
+			$query = "delete from tb_usuarios where id = {$this->iduser}";
 			$this->conexao->exec($query);
 			header("Location: /deleteuser");		
 		} else {

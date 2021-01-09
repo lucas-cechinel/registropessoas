@@ -56,6 +56,3 @@ class IndexController {
 		require_once "../App/Models/deleteuser_db.php";
 	}
 }
-
-
-?>

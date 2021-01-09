@@ -21,7 +21,7 @@ class Edicao
 	function editar()
 	{
 		if($_SESSION['autenticado']) {
-			$query = "update tb_usuarios set nome = '$this->updatedname', email = '$this->updatedemail' where id = $this->userid";
+			$query = "update tb_usuarios set nome = '{$this->updatedname}', email = '{$this->updatedemail}' where id = $this->userid";
 			$this->conexao->exec($query);
 			header("Location: /edituser");
 			
